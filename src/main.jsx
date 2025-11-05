@@ -1,12 +1,6 @@
 import { createRoot } from "react-dom/client";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Home from "./Pages/Home.jsx";
-import Map from "./Pages/Map.jsx";
-import About from "./Pages/About.jsx";
-import SupportUs from "./Pages/SupportUs.jsx";
-import Contact from "./Pages/Contact.jsx";
-import NotFound from "./Pages/NotFound.jsx";
-import ChatBot from "./Pages/ChatBot.jsx";
+import { Home, Map, About, SupportUs, Contact, NotFound, ChatBot } from "./Pages";
 import './index.css';
 
 createRoot(document.getElementById("root")).render(
