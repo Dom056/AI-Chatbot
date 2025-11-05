@@ -6,6 +6,8 @@ import About from "./Pages/About.jsx";
 import SupportUs from "./Pages/SupportUs.jsx";
 import Contact from "./Pages/Contact.jsx";
 import NotFound from "./Pages/NotFound.jsx";
+import ChatBot from "./Pages/ChatBot.jsx";
+import './index.css';
 
 createRoot(document.getElementById("root")).render(
   <BrowserRouter>
@@ -15,6 +17,7 @@ createRoot(document.getElementById("root")).render(
       <Route path="map" element={<Map />} />  
       <Route path="supportus" element={<SupportUs />} />
       <Route path="contact" element={<Contact />} />
+      <Route path="aichatbot" element={<ChatBot />} />
       <Route path="*" element={<NotFound />} /> 
     </Routes>
   </BrowserRouter>
