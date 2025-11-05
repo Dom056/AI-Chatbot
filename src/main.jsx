@@ -1,13 +1,21 @@
 import { createRoot } from "react-dom/client";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./Pages/Home.jsx";
-import MapPage from "./Pages/Map.jsx"; // renamed Map to MapPage to avoid JS Map conflict
+import Map from "./Pages/Map.jsx";
+import About from "./Pages/About.jsx";
+import SupportUs from "./Pages/SupportUs.jsx";
+import Contact from "./Pages/Contact.jsx";
+import NotFound from "./Pages/NotFound.jsx";
 
 createRoot(document.getElementById("root")).render(
   <BrowserRouter>
     <Routes>
-      <Route index element={<Home />} />          {/* '/' */}
-      <Route path="map" element={<MapPage />} />  {/* '/map' */}
+      <Route index element={<Home />} />         
+      <Route path="about" element={<About />} />  
+      <Route path="map" element={<Map />} />  
+      <Route path="supportus" element={<SupportUs />} />
+      <Route path="contact" element={<Contact />} />
+      <Route path="*" element={<NotFound />} /> 
     </Routes>
   </BrowserRouter>
 );

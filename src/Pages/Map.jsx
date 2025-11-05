@@ -1,10 +1,11 @@
 import { Link } from "react-router-dom";
+import NavBar from "../components/NavBar.jsx";
 
-export default function MapPage() {
+export default function Map() {
   return (
     <div>
+      <NavBar />
       <h1>Map Page</h1>
-      <Link to="/">Back to Home</Link>
     </div>
   );
 }

@@ -1,11 +1,11 @@
 import { Link } from "react-router-dom";
 import NavBar from "../components/NavBar.jsx";
 
-export default function Home() {
+export default function SupportUs() {
   return (
     <div>
       <NavBar />
-      <h1>Home Page</h1>
+      <h1>Support Us Page</h1>
     </div>
   );
 }
