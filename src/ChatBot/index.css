@@ -24,10 +24,7 @@ a:hover {
 
 body {
   margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+  padding: 0;
 }
 
 h1 {
@@ -65,17 +62,4 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
-}
-
-.chatbot-card {
-  background-color: #2a2a2a;
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  padding: 16px;
-  max-width: 400px;
-  margin: 16px auto;
-  text-align: center;
-  background-image: url('assets/Ram.webp');
-  background-size: cover;
-  background-position: center;
 }
